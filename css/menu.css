@@ -1,0 +1,100 @@
+/* /////////////////////// Image/top /////////////////////// */
+
+#menu{
+	background-color: var(--gris-background);
+	padding-bottom: 4em;
+}
+
+#menu  div img{
+	object-fit: cover;
+	object-position: 50% 0%;
+
+	width: 100%;
+	height: 260px;
+	margin-bottom: 3em;
+	box-shadow: 0px 6px 10px -3px rgba(206,206,206,1) inset;
+}
+
+h1{
+	font-family: 'Shrikhand', cursive;
+	width: 70%;
+	font-size: 1.8em;
+	font-weight: normal;
+}
+
+.top{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 3em 3em 0 0;
+	position: absolute;
+	top: 17em;
+	background-color: #fff;
+	width: 100%;
+	padding-top: 1.5em;
+	background-color: var(--gris-background);
+}
+
+.top .far{
+	font-size: 1.5em;
+	margin-left: -1em;
+}
+.top h1{
+	width: 80%;
+}
+/* /////////////////////// Menu /////////////////////// */
+
+.smenu{
+	width: 93%;
+	margin: auto;
+}
+
+h2{
+	margin-top: 3em;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+.traitvert{
+	margin-top: -0.6em ;
+	width: 11.7%;
+	height: 0.2em;
+	background-color: var(--vertpale-tertiaire);
+}
+
+.smenu .far{
+	display: none;
+}
+
+.boxmenu{
+	background-color: #fff;
+	border-radius: 1.5em;
+	padding: 1em;
+	margin-top: 1em;
+	cursor: pointer;
+	box-shadow: 1px 5px 20px -9px rgba(0,0,0,0.59);
+	height: auto;
+}
+
+.boxmenu p ,h3 ,strong{
+	margin: 0;
+}
+
+.boxmenu p{
+	max-width: 88%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-top: 0.5em;
+}
+
+.flexstrong{
+	display: flex;
+	justify-content: space-between;
+}
+
+#menu .btnrose{
+	margin-top: 4em;
+	text-align: center;
+}

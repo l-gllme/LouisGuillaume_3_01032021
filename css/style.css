@@ -1,14 +1,204 @@
+
+
+/* ----------------------------------- Main ----------------------------------- */
+
+
+/* /////////////////////// Polices et tailles de texte /////////////////////// */
+
 h4{
 	font-family: 'Shrikhand', cursive;
 }
 body{
 	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	font-size: 1em;
+	height: auto;
 }
-img{
-	width: 300px;
-	height: 200px;
+a{
+	text-decoration: none;
+	color: black;
 }
-footer{
-	color: white;
-	background-color: black;
+
+/* /////////////////////// Variables Couleurs /////////////////////// */
+
+html{
+	--violet-primaire: #9356DC;
+	--rose-secondaire: #FF79DA;
+	--vertpale-tertiaire: #99E2D0;
+	--gris-background: #f6f6f6;
+}
+
+
+
+/* ----------------------------------- Index ----------------------------------- */
+
+
+
+/* /////////////////////// Top /////////////////////// */
+
+#top{
+	background: var(--gris-background);
+	text-align: center;
+}
+
+#fondgris{	/* Bordure Paris Bellevile*/
+	background: #eaeaea;
+	padding-top: 0.1em; 
+	padding-bottom: 0.1em;
+	color: 353535;
+	font-size: 0.95em;
+	box-shadow: 0px 6px 5px -3px rgba(206,206,206,0.75) inset;
+}
+
+#fondgris .fas{
+	margin-right: 0.5em;
+}
+
+#fondgrisclair{
+	padding-top: 2.8em;
+	padding-bottom: 2.8em;
+}
+
+#fondgrisclair h1{
+	margin: 0;
+	margin: auto;
+	width: 65%;
+	margin-bottom: 0.5em;
+}
+#fondgrisclair .topp{
+	width: 82%;
+	margin: auto;
+	margin-bottom: 1.6em;
+	font-weight: 300;
+}
+
+.btnrose{
+	background: linear-gradient(173deg, #e671da 25%, #9c59dc 75%);
+	width: 57%;
+	margin: auto;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	color: #fff;
+	border-radius: 5em;
+	box-shadow: 1px 5px 21px -3px rgba(0,0,0,0.59);
+	cursor: pointer;
+}
+
+
+/* /////////////////////// Fonctionnement /////////////////////// */
+
+#fonctionnement{
+	width: 89%;
+	margin: auto;
+}
+
+#fonctionnement .allingcircle{
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.5em;
+}
+
+.cercle{
+	border-radius: 50%;
+	height: 1.6em;
+	width: 1.6em;
+	background-color: var(--violet-primaire);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	position: absolute;
+	left: 0.5em;
+
+}
+
+.box{
+	background-color: var(--gris-background);
+	border-radius: 1em;
+	box-shadow: 1px 5px 20px -9px rgba(0,0,0,0.59);
+	width: 100%;
+	display: flex;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.box .txt{
+	font-weight: bold;
+}
+
+.box .fas{
+	color: #7e7e7e;
+	margin-left: 2em;
+	margin-right: 1.5em;
+}
+.purple{
+	background-color: #f5edff;
+}
+
+#purple{
+	color: var(--violet-primaire);
+}
+
+
+/* /////////////////////// Restaurants /////////////////////// */
+
+#restaurants{
+	background-color: var(--gris-background);
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+#margerestaurants{
+	width:89%;
+	margin: auto;
+}
+
+.btnvert{
+	background-color: #99e2d1;
+	color: #4cb49b;
+	width: 24%;
+	text-align: center;
+	border-radius: 0.2em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	position: absolute;
+	right: 2em;
+}
+
+
+.btn{
+	background-color: #fff;
+	border-radius: 1em;
+	margin-bottom: 1.3em;
+}
+
+.btn img{
+	width: 100%;
+	border-radius: 1em 1em 0 0;
+	object-fit: cover;
+	object-position: 0 62%;
+	height: 175px;
+	margin-bottom: 0.5em;
+}
+
+.heartflex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.heartflex p, .heartflex h3{
+	margin: 0em;
+	margin-top: 0.2em;
+	margin-left: 1em;
+}
+
+.heartflex p{
+	margin-bottom: 0.7em;
+}
+
+.heartflex .far{
+	font-size: 1.4em;
+	margin-bottom: 0.9em;
+	margin-right: 1em;
 }
