@@ -2,6 +2,8 @@
 
 /* ----------------------------------- Main ----------------------------------- */
 
+body{
+}
 
 /* /////////////////////// Polices et tailles de texte /////////////////////// */
 
@@ -26,6 +28,7 @@ html{
 	--rose-secondaire: #FF79DA;
 	--vertpale-tertiaire: #99E2D0;
 	--gris-background: #f6f6f6;
+	--rouge-coeur: #d12424;
 }
 
 
@@ -82,6 +85,13 @@ html{
 	border-radius: 5em;
 	box-shadow: 1px 5px 21px -3px rgba(0,0,0,0.59);
 	cursor: pointer;
+
+}
+
+.btnrose:hover{
+	background: linear-gradient(173deg, rgba(230,113,218,0.92) 25%, rgba(156,89,220,0.92) 75%);
+	box-shadow: 1px 7px 25px -3px rgba(0,0,0,0.59);
+	transition: transform 10000ms;
 }
 
 
@@ -96,6 +106,7 @@ html{
 	display: flex;
 	align-items: center;
 	margin-bottom: 1.5em;
+	position: relative;
 }
 
 .cercle{
@@ -108,7 +119,7 @@ html{
 	justify-content: center;
 	color: #fff;
 	position: absolute;
-	left: 0.5em;
+	left: -0.5em;
 
 }
 
@@ -156,13 +167,13 @@ html{
 .btnvert{
 	background-color: #99e2d1;
 	color: #4cb49b;
-	width: 24%;
+	width: 27%;
 	text-align: center;
 	border-radius: 0.2em;
 	padding-top: 0.3em;
 	padding-bottom: 0.3em;
 	position: absolute;
-	right: 2em;
+	right: 1em;
 }
 
 
@@ -170,6 +181,7 @@ html{
 	background-color: #fff;
 	border-radius: 1em;
 	margin-bottom: 1.3em;
+	position: relative;
 }
 
 .btn img{
@@ -202,3 +214,218 @@ html{
 	margin-bottom: 0.9em;
 	margin-right: 1em;
 }
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                                        Keyframes/ animations                                   */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* <3 Index */
+
+.heartposition{
+	position: relative;
+}
+
+.videindex{
+	cursor: pointer; 
+	transition: 200ms;
+}
+.pleinindex{
+	font-size: 1.4em;
+	position: absolute;
+	color: var(--rouge-coeur);
+	left: 0;
+	opacity: 0;
+	transition: 500ms;
+}
+
+.heartposition:hover >.pleinindex{
+	opacity: 1;
+}
+.heartposition:hover >.videindex{
+	opacity: 0;
+}
+
+/* LOADER */
+
+.loader{
+	width: 100%
+	height:100%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: -10;
+	background-color: rgb(255,255,255,0.90);
+	opacity: 0;
+	animation: passedevant 3000ms;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.spinning{
+	width: 80px;
+	height: 80px;
+	border: 10px solid var(--violet-primaire);
+	border-top: 10px solid var(--rose-secondaire); 
+	border-bottom: 10px solid var(--rose-secondaire);
+	border-radius: 50%;
+	animation: tombedroite  3s ease-in-out;
+	opacity: 0;
+
+}
+
+@keyframes passedevant{
+	0%{
+		z-index: 10;
+		opacity: 1;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		z-index: 10;
+		opacity: 0;
+	}
+}
+
+@keyframes tombedroite{
+	0%{
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+	50%{
+		opacity: 1;
+	}	
+	100%{
+		transform: rotate(720deg);
+		opacity: 0;
+	}
+}
+
+/*cacher le bas de la page*/
+
+#index{
+	animation: overflowhidden 3000ms;
+}
+
+@keyframes overflowhidden {
+	from{
+		overflow: hidden;
+	}
+	to{
+		overflow: hidden;
+	}
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                                        Media                                                   */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (min-width: 501px){
+
+	.btnrose{
+		width: 40%;
+		padding-top: 0.1em;
+		padding-bottom: 0.1em;
+	}
+	#margerestaurants{
+		width:80%;
+	}
+
+	.btn img{
+		height: 300px;
+	}
+
+}	
+
+@media screen and (min-width: 768px){
+
+	.flexrestau{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.r{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.btn{
+		width: 100%;
+		max-width: 500px;
+	}
+	.btn img{
+		height: 250px;
+		width: 100%;
+		min-width: 352px;
+	}
+	#margerestaurants{
+		width:90%;
+	}
+	.marger{
+		margin-left: 20px;
+	}
+
+}
+
+@media screen and (min-width: 1024px){
+
+	#fonctionnement{
+		width:90%;
+	}
+	.flexfonctionnement{
+		display: flex;
+		justify-content: space-between;
+		margin: auto;
+		width: 100%;
+
+	}
+	.flexfonctionnement .box{
+		width: 300px;
+	}
+
+	.btn{
+		max-width: 800px;
+	}
+
+	.btn img{
+		height: 250px;
+		width: 100%;
+		min-width: 466px;
+	}
+
+}
+
+@media screen and (min-width: 850px){
+
+
+	.btnrose{
+		width: 25%;
+	}
+
+	#fondgris{	
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 1024px){
+
+	body{
+		margin: auto;
+	}
+	#page{
+	}
+
+	.btnrose{
+		width: 20%;
+	}
+}
+@media screen and (min-width: 1440px){
+
+	.btn img{
+		height: 250px;
+		width: 100%;
+		min-width: 656px;
+	}
+}
+
+

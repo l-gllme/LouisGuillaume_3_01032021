@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html id="index">
 
 <head>
 
@@ -16,11 +16,14 @@
 	<script src="https://kit.fontawesome.com/c7d0bf817a.js" crossorigin="anonymous"></script>
 	<!--ViewPort-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="images/logo/favicon.png">
 
 </head>
 
 <body>
-	<div>
+	<div class="loader"><div class="spinning"></div></div>
+	<div id="page">
 
 		<!-- ----------- Header ----------- -->
 
@@ -33,7 +36,6 @@
 		<!-- ----------- Top ----------- -->
 
 		<section id="top">
-
 			<div id="fondgris"><p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p></div>
 			<div id="fondgrisclair">
 				<h1>Réservez le menu qui vous convient</h1>
@@ -46,10 +48,17 @@
 		<!-- ----------- Fonctionnement ----------- -->
 
 		<section id="fonctionnement">
+
 			<h2>Fonctionnement</h2>
-			<div class="allingcircle"><div class="cercle"><p>1</p></div><div class="box"><p><i class="fas fa-mobile-alt"></i></p><p class="txt"> Choisissez un restaurant</p></div></div>
-			<div class="allingcircle"><div class="cercle"><p>2</p></div><div class="box"><p><i class="fas fa-list-ul"></i></p><p class="txt"> Composez votre menu</p></div></div>
-			<div class="allingcircle"><div class="cercle"><p>3</p></div><div class="box purple"><p><i id="purple" class="fas fa-store"></i></p><p class="txt"> Dégustez au restaurant</p></div></div>
+
+			<div class="flexfonctionnement">
+
+				<div class="allingcircle"><div class="cercle"><p>1</p></div><div class="box"><p><i class="fas fa-mobile-alt"></i></p><p class="txt"> Choisissez un restaurant</p></div></div>
+				<div class="allingcircle"><div class="cercle"><p>2</p></div><div class="box"><p><i class="fas fa-list-ul"></i></p><p class="txt"> Composez votre menu</p></div></div>
+				<div class="allingcircle"><div class="cercle"><p>3</p></div><div class="box purple"><p><i id="purple" class="fas fa-store"></i></p><p class="txt"> Dégustez au restaurant</p></div></div>
+
+			</div>
+
 		</section>
 
 		<!-- ----------- Restaurants ----------- -->
@@ -58,43 +67,76 @@
 			<div id="margerestaurants">
 
 				<h2>Restaurants</h2>
-				<a href="html/lapalettedugout.html">
-					<div class="btn">
-						<p class="btnvert">Nouveau</p>
-						<img src="images/restaurants/1.jpg" alt="Photo du restaurant"><div class="heartflex"><div><h3>La palette du goût</h3><p>Ménilmontant</p></div><i class="far fa-heart"></i></div>
-					</div>
-				</a>
-				<a href="html/lanoteenchantee.html">
-					<div class="btn">
-						<p class="btnvert">Nouveau</p>
-						<img src="images/restaurants/2.jpg" alt="Photo du restaurant"><div class="heartflex"><div><h3>La note enchantée</h3><p>Charonne</p></div><i class="far fa-heart"></i></div>
-					</div>
-				</a>
-				<a href="html/alafrancaise.html">
-					<div class="btn">
-						<img src="images/restaurants/3.jpg" alt="Photo du restaurant"><div class="heartflex"><div><h3>A la française</h3><p>Cité Rouge</p></div><i class="far fa-heart"></i></div>
-					</div>
-				</a>
-				<a href="html/ledelicedessens.html">
-					<div class="btn">
-						<img src="images/restaurants/4.jpg" alt="Photo du restaurant"><div class="heartflex"><div><h3>Le délice des sens</h3><p>Folie-Méricourt</p></div><i class="far fa-heart"></i></div>
-					</div>
-				</a>
+				<div class="flexrestau">
+					<div class="r">
 
+						<a href="html/lapalettedugout.html">
+							<div class="btn">
+								<p class="btnvert">Nouveau</p>
+								<img src="images/restaurants/1.jpg" alt="Photo du restaurant">
+								<div class="heartflex">
+									<div>
+										<h3>La palette du goût</h3>
+										<p>Ménilmontant</p>
+									</div>
+									<div class="heartposition"><i class="far fa-heart videindex"></i><i class="fas fa-heart pleinindex"></i></div>
+								</div>
+							</div>
+						</a>
+						<a href="html/lanoteenchantee.html">
+							<div class="btn marger">
+								<p class="btnvert">Nouveau</p>
+								<img src="images/restaurants/2.jpg" alt="Photo du restaurant">
+								<div class="heartflex">
+									<div>
+										<h3>La note enchantée</h3>
+										<p>Charonne</p>
+									</div>
+									<div class="heartposition"><i class="far fa-heart videindex"></i><i class="fas fa-heart pleinindex"></i></div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="r">
+						<a href="html/alafrancaise.html">
+							<div class="btn">
+								<img src="images/restaurants/3.jpg" alt="Photo du restaurant">
+								<div class="heartflex">
+									<div>
+										<h3>A la française</h3>
+										<p>Cité Rouge</p>
+									</div>
+									<div class="heartposition"><i class="far fa-heart videindex"></i><i class="fas fa-heart pleinindex"></i></div>
+								</div>
+							</div>
+						</a>
+						<a href="html/ledelicedessens.html">
+							<div class="btn marger">
+								<img src="images/restaurants/4.jpg" alt="Photo du restaurant">
+								<div class="heartflex"><div>
+									<h3>Le délice des sens</h3>
+									<p>Folie-Méricourt</p>
+								</div>
+								<div class="heartposition"><i class="far fa-heart videindex"></i><i class="fas fa-heart pleinindex"></i></div>
+							</div>
+						</div>
+					</a>
+				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- ----------- Footer ----------- -->
+	<!-- ----------- Footer ----------- -->
 
-		<footer>
-			<h4>ohmyfood</h4>
-			<p><i class="fas fa-utensils"></i> Proposer un restaurant</p>
-			<p><i class="fas fa-hands-helping"></i> Devenir partenaire</p>
-			<p>Mentions légales</p>
-			<a href="mailto:"><p class="mailto">Contact</p></a>
-		</footer>
+	<footer>
+		<h4>ohmyfood</h4>
+		<p><i class="fas fa-utensils"></i> Proposer un restaurant</p>
+		<p><i class="fas fa-hands-helping"></i></span>Devenir partenaire</p>
+		<p>Mentions légales</p>
+		<a href="mailto:"><p class="mailto">Contact</p></a>
+	</footer>
 
-	</div>
+</div>
 
 </body>
 
