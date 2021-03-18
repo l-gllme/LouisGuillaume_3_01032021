@@ -48,7 +48,7 @@ html{
 	background: #eaeaea;
 	padding-top: 0.1em; 
 	padding-bottom: 0.1em;
-	color: 353535;
+	color: #353535;
 	font-size: 0.95em;
 	box-shadow: 0px 6px 5px -3px rgba(206,206,206,0.75) inset;
 }
@@ -248,7 +248,7 @@ html{
 /* LOADER */
 
 .loader{
-	width: 100%
+	width: 100%;
 	height:100%;
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;

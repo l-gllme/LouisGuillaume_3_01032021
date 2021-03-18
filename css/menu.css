@@ -165,12 +165,12 @@ strong{
 .plein{
 	font-size: 1.5em;
 	color: var(--rouge-coeur);
-  	opacity: 0;
-  	transition: 500ms;
+	opacity: 0;
+	transition: 500ms;
 }
 
 .flexheart:hover > .plein{
-	 opacity:1;
+	opacity:1;
 }
 .flexheart:hover >.vide{
 	color: var(--rouge-coeur);
@@ -198,8 +198,8 @@ strong{
 	transform: rotate(90deg);
 }
 
- body .boxmenu:active > .checked{
-	 margin-right: 0em;
+body .boxmenu:active > .checked{
+	margin-right: 0em;
 }
 
 body .boxmenu:active >.checked  >.fas{
