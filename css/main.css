@@ -158,7 +158,9 @@ html{
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
-
+#restaurants a{
+	width: 100%;
+}
 #margerestaurants{
 	width:89%;
 	margin: auto;
